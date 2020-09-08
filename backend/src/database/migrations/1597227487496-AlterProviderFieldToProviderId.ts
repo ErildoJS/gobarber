@@ -22,8 +22,8 @@ export default class AlterProviderFieldToProviderId1597227487496
       'appointments',
       new TableForeignKey({
         name: 'AppointmentProvider',
-        columnNames: ['provider_id'],
-        referencedColumnNames: ['id'],
+        columnNames: ['provider_id'], // qual a coluna que vai receber a key strangeira
+        referencedColumnNames: ['id'], // qual o nome do coluna na outra tabela que vai representart esse provider_id
         referencedTableName: 'users',
         onDelete: 'SET NULL',
         onUpdate: 'CASCADE',
