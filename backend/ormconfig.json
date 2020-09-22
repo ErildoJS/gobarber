@@ -1,9 +1,9 @@
 {
   "type": "postgres",
   "host": "localhost",
-  "port": 5433,
+  "port": 5432,
   "username": "postgres",
-  "password": "iurd2020",
+  "password": "1234",
   "database": "gobarberts",
   "entities": [
     "./src/models/*.ts"
