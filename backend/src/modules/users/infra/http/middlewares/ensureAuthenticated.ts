@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { verify } from 'jsonwebtoken'; // verifica se o token é  valido
-import authConfig from '../config/auth';
-import AppError from '../erros/AppError';
+import authConfig from '@config/auth';
+import AppError from '@shared/erros/AppError';
 
 interface TokenPaylod {
   iat: number;

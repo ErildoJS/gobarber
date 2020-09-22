@@ -1,9 +1,9 @@
 import { getRepository } from 'typeorm';
 import { compare } from 'bcryptjs'; // compare - usado para comparar  senhas
 import { sign } from 'jsonwebtoken'; // cria um token
-import authConfig from '../config/auth';
-import User from '../models/User';
-import AppError from '../erros/AppError';
+import authConfig from '@config/auth';
+import AppError from '@shared/erros/AppError';
+import User from '../infra/typeorm/entities/User';
 
 interface Request {
   email: string;

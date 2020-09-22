@@ -1,8 +1,8 @@
 import { getRepository } from 'typeorm';
 import { hash } from 'bcryptjs';
 // hash - usado para verificar senha
-import User from '../models/User';
-import AppError from '../erros/AppError';
+import AppError from '@shared/erros/AppError';
+import User from '../infra/typeorm/entities/User';
 
 interface Request {
   name: string;
